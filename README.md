@@ -6,4 +6,4 @@ Day 2 - 6 march 2025 - mini AWS project
 Day 3 - 7 march 2025 - Ansible interview prep , ansible project  
 Day 4 - 10 march 2025 - ansible theory and practical questions  
 Day 5 - 15 march 2025 - EC2 and IAM (Basics to intemidiate interview questions)  
-Day 6 - 16 march 2025 - EC2 , IAM , S3 (all practical questions and hands-on)
+Day 6 - 16 march 2025 - EC2 , IAM , S3 (all practical questions , common problems and its troubleshooting methods and hands-on)
