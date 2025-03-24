@@ -1,0 +1,37 @@
+K8S:
+
+1.  What is K8S and Why wee need K8s in our Project?
+2.  Diff btw Docker & K8S?
+3.  Diff K8s and Docker Swarm?
+4.  Explain K8S Architecture?
+5.  Explain Each Components of K8S Master & Worker Node Components?
+6.  Diff btw Control Plane & Data Plane?
+7.  What is NameSpace in K8s and types of Namespace?
+8.  Types of Services in k8s?
+9.  What is POD?
+10. What is Deployment?
+11. Diff btw POD vs Deployment?
+12. Diff btw ConfigMap & Secrets?
+13. Diff btw NodePort & ClusterIP?
+14. Diff btw Stateful set & Deployment?
+15. Diff btw loadbalancer and ingress?
+
+16. Diff btw PV & PVC?
+17. Diff btw replicaset vs deployment?
+18. Diff btw replica set and a replication controller?
+19. Diff btw Replicaset vs Daemonset?
+20. What is Scedhuler in k8s and how it works?
+21. How control manger will work?
+22. Name some k8s objects which you have used in your project?
+23. What is k8s job?
+24. Diff btw job & pod?
+25. Diff btw job & Deployment?
+26. What is Side car container and how it works in k8s?
+27. What is init car container and how it works in k8s?
+28. What are probes in k8s?
+29. Diff btw Readiness Probe & Liveness Probe & Startup probe?
+30. How will you upgrade k8s cluster? Explain the steps in detail?
+31. What are k8s deployment strategies?
+32. What is HPA in K8s? and How it works?
+33. Diff btw HPA & VPA?
+34. What is helm and how it works?
