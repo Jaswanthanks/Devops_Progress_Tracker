@@ -10,3 +10,4 @@ Day 6 - 16 march 2025 - EC2 , IAM , S3 (all practical questions , common problem
 Day 7 - 17th march 2025 - terraform project ( Web hosting using NGINX ) , EC2 AND IAM problems and troubleshooting methods  
 Day 8 - 22rd march 2025 - k8's interview questions   
 Day 9 - 23rd march 2025 - Terraform interview questions
+Day 10 - 1st April 2025 - WAF project (ALB , WAF , Target groups ) 
