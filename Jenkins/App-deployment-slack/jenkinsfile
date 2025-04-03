@@ -1,0 +1,40 @@
+pipeline{
+    agent any{
+        GIT_BRANCH = sh(script: "git rev-parse --abbrev-ref HEAD" , returnStdout :true).trim()
+    }
+    stages{
+        stage("checkout  code"){
+            steps{
+                git branch : 'main' , url: ""
+            }
+        }
+        stage("Docker image build"){
+            steps{
+                script{
+                    sh 'docker build -t jaswanthanks/udemy-app:latest .'
+                    sh 'docker image'
+                }
+            }
+        }
+        stage('Docker push'){
+            steps{
+                script{
+                    withCredentials([string(credentialsId: 'dockerpass', variable: 'dockerPassword')]){
+                        sh 'docker login -u jaswanthanks -p ${dockerPassword}'
+                        sh 'docker push jaswanthanks/udemy-app:latest'
+                    }
+                }
+            }
+        }
+        stage('Deploy Docker Container'){
+            steps{
+                script{
+                    sh 'docker pull jaswanthanks/udemy-app:latest'
+                    sh 'docker stop udemy-app || true'
+                    sh 'docker rm udemy-app || true'
+                    sh 'docker run -itd --name udemy-app -p 3000:10 jaswanthanks/udemy-app:latest'
+                }
+            }
+        }
+    }
+}
